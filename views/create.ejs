@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style2.css">
+    <title>CreateBlog</title>
+</head>
+<body>
+  <div class="CreateBlog">
+    <h1>Create Blog</h1>
+  </div>
+  <div class="full-screen-form">
+    
+    <form action="/submit-blog" method="POST">
+        <!-- Author Name Input -->
+        <div class="mb-3">
+         
+          <input type="text" class="form-control" id="authorName" name="author" placeholder="Author Name" required>
+        </div>
+      
+        <!-- Blog Title Input -->
+        <div class="mb-3">
+         
+          <input type="text" class="form-control" id="blogTitle" name="title" placeholder="Blog Title" required>
+        </div>
+      
+        <!-- Blog Content Input (textarea) -->
+        <div class="mb-3">
+          
+          <textarea class="form-control" id="blogContent" rows="5" name="content" placeholder="Write your blog here..." required></textarea>
+        </div>
+      
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Post Blog</button>  
+       
+      </form>
+    
+      
+    </div>
+</body>
+</html>

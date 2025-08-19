@@ -1,0 +1,77 @@
+.navbar {
+        backdrop-filter: blur(10px);
+        background: #252A34 !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    body {
+        background:  #EAEAEA;
+        min-height: 100vh;
+          font-family: 'Inter', sans-serif;
+       
+    }
+        .page-header {
+             background:#08D9D6;
+            color:#222831 ;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        .stats-card {
+            background:#252A34;
+            color: white;
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .blog-card {
+            border: 2px solid black;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            transition: transform 0.2s ease;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        .blog-card h5{
+             font-family: 'Roboto', sans-serif; 
+             color: #333; 
+             font-weight: 600;
+        }
+        .blog-card p {
+        color: #4a5568;
+        font-weight: 400;
+       }
+        .action-buttons .btn {
+            margin: 0.2rem;
+        }
+       
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: #6c757d;
+        }
+        .empty-state i {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+        .createbtn {
+            background:  #FF2E63; color: white;
+    }
+         .createbtn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px;
+        color: white;
+        background-color: #D91656;
+         }
+         .btn-dark {
+    background-color: #112D4E;  
+    border-color: #112D4E;
+   
+  }
+  
+  .btn-dark:hover {
+    background-color: #0d1b2a;
+    box-shadow: 0px 6px 12px #112D4E; 
+  }

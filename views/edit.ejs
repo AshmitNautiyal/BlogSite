@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style2.css">
+  <title>Edit Blog</title>
+</head>
+<body>
+  <h1>Edit Blog</h1>
+   <div class="full-screen-form">
+   
+    
+  <form action="/edit-blog/<%= blog.id %>" method="POST">
+
+   
+    <div class="mb-3">
+      <input type="text" class="form-control" id="blogTitle" name="title" value="<%= blog.title %>" required>
+    </div>
+
+  
+    <div class="mb-3">
+      <textarea class="form-control" id="blogContent" rows="5" name="content" required><%= blog.content %></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update Blog</button>
+   <button class="btn btn-primary" id="cancel"> <a href="/my-blogs" ></a>Cancel</button>
+
+  </form>
+
+
+</div>
+</body>
+</html>

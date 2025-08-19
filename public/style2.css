@@ -1,0 +1,128 @@
+body{
+    background-color:#EAEAEA;
+    text-align: center;
+}
+.full-screen-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    padding: 10px;
+  }
+
+  .full-screen-form form {
+    background-color: #ffffff; 
+    border: 2px solid black;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px; 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
+    text-align: center; }
+
+    .full-screen-form input[type="text"], 
+.full-screen-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 1.5rem; 
+  border: 2px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.full-screen-form button {
+    font-size: 1.5rem; 
+    padding: 15px 30px;
+    background-color: #222831; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .full-screen-form button:hover {
+    background-color: #0d1b2a; 
+  }
+
+  #cancel{
+    margin-left: 10px;
+  }
+
+  
+.blog-container {
+    max-width: 800px;
+    margin: 50px auto; 
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+    border: 2px solid black; 
+    
+  }
+  
+  
+  .blog-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  
+  .blog-container .blog-author {
+    font-size: 1.2rem;
+    color: #888888;
+    margin-bottom: 30px;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  
+  .blog-container .blog-content {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #444444;
+    text-align: justify;
+    margin-bottom: 40px;
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+     max-width: 100%; 
+    white-space: normal; 
+  }
+  
+  .back{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .blog-container .back-button {
+    display: inline-block;
+    background-color: #222831;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .blog-container .back-button:hover {
+    background-color: #0d1b2a;
+    transform: scale(1.05); 
+  }
+  
+  .full-screen-form button.cancel{
+    margin-left: 20px;
+  }
+
+  h1{
+    color: #112D4E;
+    font-size: 50px;
+    margin-bottom: 0px;
+    font-weight: bold; 
+    font-family: 'Roboto', sans-serif;
+  }
