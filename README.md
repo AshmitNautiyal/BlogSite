@@ -21,13 +21,16 @@ A full-stack blog web application that allows users to **create, view, edit, and
 ## ScreeShots
 
 **Home Page**
-![Alt Text Here](https://github.com/user-attachments/assets/f8e169cf-6bd6-49cf-87dd-c99d4f9365b6)
+
 ![Alt Text Here](https://github.com/user-attachments/assets/f67fd191-2b94-4e29-890e-2ec858f91dd7)
+![Alt Text Here](https://github.com/user-attachments/assets/f8e169cf-6bd6-49cf-87dd-c99d4f9365b6)
 
 **My Blogs**
+
 ![Alt Text Here](https://github.com/user-attachments/assets/0ab5045d-8b63-47a4-8579-4bdf86e58d1d)
 
 **Create Blog**
+
 ![Alt Text Here](https://github.com/user-attachments/assets/476cf60c-091d-484d-bfc8-3c953583b14c)
 
 ## Getting Started
