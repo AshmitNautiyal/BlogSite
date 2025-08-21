@@ -33,6 +33,14 @@ A full-stack blog web application that allows users to **create, view, edit, and
 
 ![Alt Text Here](https://github.com/user-attachments/assets/476cf60c-091d-484d-bfc8-3c953583b14c)
 
+**View Blog**
+
+![Alt Text Here](https://github.com/user-attachments/assets/f4d8ef4c-6abb-411f-a08e-33ee51426c11)
+
+**Login Page**
+
+![Alt Text Here](https://github.com/user-attachments/assets/a595e571-09dd-44b4-b553-5a5d2eb65d24)
+
 ## Getting Started
 
 ### Prerequisites
