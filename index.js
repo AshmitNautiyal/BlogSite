@@ -12,13 +12,13 @@ import { User } from './models/User.js';
 import { Post } from './models/Post.js';
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const PgSession = connectPgSimple(session);
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
-
+app.set("trust proxy", 1);
 // Session configuration
 app.use(session({
   store: new PgSession({
@@ -28,17 +28,28 @@ app.use(session({
       database: process.env.PG_DATABASE,
       user: process.env.PG_USER,
       password: process.env.PG_PASSWORD,
+
+      ssl: process.env.NODE_ENV === "production"
+        ? {
+            require: true,
+            rejectUnauthorized: false,
+          }
+        : false,
     },
-    tableName: 'user_sessions',
-    createTableIfMissing: true
+
+    tableName: "user_sessions",
+    createTableIfMissing: true,
   }),
-  secret: process.env.SESSION_SECRET || 'xyz123',
+
+  secret: process.env.SESSION_SECRET || "xyz123",
   resave: false,
   saveUninitialized: false,
-  cookie: { 
-    secure: false, // Set to true in production with HTTPS
-    maxAge: 24 * 60 * 60 * 1000 // 24 hours
-  }
+
+  cookie: {
+    secure: process.env.NODE_ENV === "production",
+    httpOnly: true,
+    maxAge: 24 * 60 * 60 * 1000,
+  },
 }));
 
 // Authentication middleware
